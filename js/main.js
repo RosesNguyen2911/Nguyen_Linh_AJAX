@@ -1,13 +1,13 @@
 (() => {
 
-    //variables
+    //Variables
     const hotspots = document.querySelectorAll(".Hotspot");
     const materialTemplate = document.querySelector("#material-template");
     const materialList = document.querySelector("#material-list");
     const spinner = document.querySelector("#spinner"); // I added this for API loading feedback
     const errorMessage = document.querySelector("#error-message"); // I added this for error UI
   
-    //function
+    //Functions
     function loadInfoBoxes() {
   
       fetch("https://swiftpixel.com/earbud/api/infoboxes")
